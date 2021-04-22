@@ -33,3 +33,19 @@ displayMake(): void {
 
 const Hyundai = new Car('Hyundai', 5, false)
 Hyundai.displayMake()
+
+// Interfaces: defines the structure of variables which can be reused 
+
+interface ICar {  
+  model: String,  
+  make: String,  
+  display(): void  
+}
+
+const Car1: ICar = {  
+  model: 'Prius',  
+  make: 'Toyota',  
+  display() { console.log('hi'); }  
+}
+
+Car1.display()
